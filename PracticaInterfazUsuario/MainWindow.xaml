@@ -1,0 +1,20 @@
+﻿<Window x:Class="PracticaInterfazUsuario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaInterfazUsuario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="705">
+    <Grid Margin="0,0,2,0">
+        <TextBlock x:Name="lblTotal" HorizontalAlignment="Left" Margin="24,28,0,0" TextWrapping="Wrap" Text="Total:" VerticalAlignment="Top" Height="16" Width="52"/>
+        <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="23" Margin="24,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="432"/>
+        <Slider x:Name="sldPorcentajePropina" HorizontalAlignment="Left" Margin="24,95,0,0" VerticalAlignment="Top" Height="22" Width="660" Maximum="20" SmallChange="1" ValueChanged="sldPorcentajePropina_ValueChanged"/>
+        <TextBlock x:Name="lblPorcentajePropina" HorizontalAlignment="Left" Margin="623,117,0,0" TextWrapping="Wrap" Text="0%" VerticalAlignment="Top" Width="53" TextAlignment="Right" Height="20"/>
+        <TextBlock x:Name="lblPropina" HorizontalAlignment="Left" Margin="24,159,0,0" TextWrapping="Wrap" Text="Propina:" VerticalAlignment="Top" RenderTransformOrigin="0.122,-0.188"/>
+        <TextBlock x:Name="lblConPropina" HorizontalAlignment="Left" Margin="24,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Total con "/><Run Text="Propina"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="lblResultadoPropina" HorizontalAlignment="Left" Margin="140,159,0,0" TextWrapping="Wrap" Text="$0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblResultadoTotalConPropina" HorizontalAlignment="Left" Margin="140,191,0,0" TextWrapping="Wrap" Text="$0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
